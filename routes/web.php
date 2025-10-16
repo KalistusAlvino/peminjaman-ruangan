@@ -36,7 +36,7 @@ Route::middleware(['role:pengguna'])->group(function () {
     Route::post('/dashboard/bookings/store', [BookingController::class, 'store'])->name('user.booking.store');
 });
 
-Route::middleware(['role:admin,user'])->group(function () {
+Route::middleware(['role:admin,pengguna'])->group(function () {
     Route::post('/logout', [AuthController::class,'logout'])->name('logout');
 });
 
