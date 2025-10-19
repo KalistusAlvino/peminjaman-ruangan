@@ -1,4 +1,4 @@
-# Peminjangan-ruangan-api
+# Peminjangan-ruangan
 
 ## Hosted URL
 ```bash
@@ -24,4 +24,9 @@ Jalankan beberapa perintah dibawah secara berurutan
 Setelah melakukan beberapa langkah diatas, dan sudah menyesuaikan koneksi untuk database pada file ".env" berikut perintah untuk melakukan installasi database.
 ```bash
   php artisan migrate
+```
+
+## Storage Symlink.
+```bash
+  php artisan storage:link
 ```
